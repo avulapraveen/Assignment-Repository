@@ -1,0 +1,26 @@
+server:
+  port: 5672
+
+spring:
+  application:
+    name: DOCTOR-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/doctor_db
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: Doctor Service API
+    version: "1.0"

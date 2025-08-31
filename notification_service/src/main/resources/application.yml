@@ -1,0 +1,25 @@
+server:
+  port: 5674
+
+spring:
+  application:
+    name: NOTIFICATION-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/notification_db
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+  kafka:
+    bootstrap-servers: localhost:9092
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: Notification Service API
+    version: "1.0"

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: AUDIT-SERVICE
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/audit_log_db
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+server:
+  port: 5675
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: Audit/Logs Service API
+    version: "1.0"

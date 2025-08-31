@@ -1,0 +1,29 @@
+server:
+  port: 5671
+
+spring:
+  application:
+    name: PATIENT-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/hospital_db
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/patient_records
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: Patient Service API
+    version: "1.0"

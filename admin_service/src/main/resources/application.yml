@@ -1,0 +1,25 @@
+server:
+  port: 5676
+
+spring:
+  application:
+    name: ADMIN-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/adminrm -rf .git_db
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+  kafka:
+    bootstrap-servers: localhost:9092
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  info:
+    title: ADMIN Service API
+    version: "1.0"
